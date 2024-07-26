@@ -1,0 +1,88 @@
+<body>
+  <div class="container">
+      <div class="apply_box">
+        <h1>
+          Create your Profile
+
+        </h1>
+        <form class="form" [formGroup]="profileForm">
+          <div class="form_container">
+            <div class="form_control">
+              <label for="first_Name"><b> First Name</b> </label>
+              <input  name="first_Name" placeholder="Enter First Name..." formControlName="firstName"  >
+            </div><br>
+            <div class="form_control">
+              <label for="last_Name"><b>Last Name</b>  </label>
+              <input id="last_Name" name="last_Name" placeholder="Enter Last Name..." formControlName="lastName"  >
+            </div><br>
+            <div class="form-control">
+              <label for="gender"><b>Gender:  </b></label><br>
+              <input type="radio" class="radio" name="gender" value="Male" id="male" formControlName="gender"  >
+              <label for="male">Male</label><br>
+              <input type="radio" class="radio" name="gender" value="Female" id="female" formControlName="gender"  >
+              <label for="female">Female</label>
+            </div><br>
+
+            <div class="form_control">
+              <label for="email"><b>Email address</b>  </label>
+              <input id="email" name="email" placeholder="Enter Email address.." formControlName="email"  >
+            </div><br>
+
+            <div class="form_control">
+              <label for="phone"><b>Mobile No:</b></label>
+              <input type="number" id="phone" name="phone" placeholder="1234567890" formControlName="mobileNo"  >
+            </div><br>
+
+
+            <div class="form_control">
+              <label for="job_role"><b>Job Seeking </b></label>
+              <select id="job_role" name="job_role" formControlName="jobSeeker">
+                <option value=""> Employment</option>
+                <option value="Fresher">Fresher</option>
+                <option value="Experience">Experience</option>
+
+              </select>
+            </div>
+            <div class="textarea_control">
+              <label for="address"><b>Current address</b> </label>
+              <textarea id="address" name="address" row="4" cols="50" placeholder="Enter Address" formControlName="currentAddress" ></textarea>
+            </div>
+
+            <div class="form_control">
+              <label for="city"><b> City</b> </label>
+              <input id="city" name="city" placeholder="Enter City Name..." formControlName="city" >
+            </div>
+            <div class="form_control">
+              <label for="pincode"><b> Pincode </b></label>
+              <input type="number" id="pincode" name="pincode" placeholder="Enter Pincode" formControlName="pincode" >
+            </div>
+            <div class="form_control">
+              <label for="password"><b>Password</b></label>
+              <input type="password" placeholder="Enter password" name="password" formControlName="password" >
+              <span></span>
+            </div>
+
+            <div class="form_control">
+              <label for="upload"><b> Upload Your CV</b> </label>
+              <input type="file" id="upload" name="upload" formControlName="resume" >
+            </div>
+          </div><br>
+          <input type="checkbox" required>
+          <label>I agree all terms and conditions</label><br>
+
+            <button  (click)="submit()">Submit</button>
+
+            <!-- <div class="user-list">
+
+              <ul>
+                <li *ngFor="let user of userList">{{ user.firstName }} {{ user.lastName }}</li>
+              </ul>
+            </div> -->
+
+
+
+
+        </form>
+      </div>
+    </div>
+  </body>

@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: space-between; /* or 'flex-start' or 'center' based on your alignment preference */
+  gap: 20px; /* Adjust the gap between the components */
+}
+
+app-profile,
+app-list {
+  flex: 1; /* Adjust flex basis as needed */
+}

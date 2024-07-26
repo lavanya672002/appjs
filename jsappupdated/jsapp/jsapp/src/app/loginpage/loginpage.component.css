@@ -1,0 +1,78 @@
+
+body {
+    display: grid;
+    place-content: center;
+    width:100%;
+    margin-left: 50%;
+    height: 100vh;
+    margin: 0;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReYotFLXbLOFOPQRlQ1PWbFpqiBO_X3uDlqA&s");
+}
+
+.login {
+    text-align: center;
+    border: 1px solid rgb(47, 106, 224);
+    width: 400px;
+    height: 500px;
+    margin-left: 50px;
+    margin-top: 10px;
+    background: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm00NTItZi0wMTQuanBn.jpg');
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.75);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+form {
+    display: block;
+    box-sizing: border-box;
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(40%);
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 24px;
+    text-shadow: 0px opx 2px rgba(0,0,0,0.5);
+    margin-bottom: 60px; 
+}
+label {
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-left: 10px;
+}
+input {
+    background: black;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: none;
+    margin-bottom: 20px;
+    color: white;
+}
+
+button {
+    background-color: white;
+    height: 40px;
+    width: 100px;
+    align-items: center;
+    line-height: 40px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    color: black;
+}
+button:hover{
+    background-color: blue;
+}

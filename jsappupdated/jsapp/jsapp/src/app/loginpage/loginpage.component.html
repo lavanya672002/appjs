@@ -1,0 +1,31 @@
+<head>
+        <title>LOGIN</title>
+
+    </head>
+    <body>
+    <div class="login" >
+    <form class="form" [formGroup]="loginForm">
+        <div class="form-group">
+        <h1><b>LOGIN </b></h1>
+        <label><b>USERNAME</b></label>
+        <input type="text" class="form-control" placeholder="Enter UserName" style="color: whitesmoke;"formControlName="email" />
+        <label><b>Password</b></label>
+        <input type="password" class="form-control" placeholder="Enter Password" id="Password" formControlName="password"  />
+        <div >
+
+          <div *ngIf="loginForm.controls['password'].invalid && loginForm.controls['password'].touched">
+            <div *ngIf="loginForm.controls['password'].errors?.['required']">Password is required.</div>
+            <div *ngIf="loginForm.controls['password'].errors?.['pattern']">Invalid password format.</div>
+          </div>
+
+        <button [disabled]="loginForm.invalid"   (click)="login()">Sign In</button><br>
+
+
+        <button (click)="signUp()">Sign up</button>
+    </div>
+
+        </div>
+
+    </form>
+</div>
+</body>
